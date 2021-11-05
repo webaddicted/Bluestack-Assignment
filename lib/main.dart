@@ -5,14 +5,12 @@ import 'package:tournament/utils/constant/color_const.dart';
 import 'package:tournament/utils/constant/routers_const.dart';
 import 'package:tournament/utils/constant/routes_page.dart';
 import 'package:tournament/utils/constant/string_const.dart';
+import 'package:tournament/utils/sp/sp_manager.dart';
 import 'package:tournament/utils/translations/language_translations.dart';
-import 'package:tournament/utils/translations/locale_constant.dart';
 
 void main() {
-  // runApp(const MyApp1());
   runApp(MyApp());
 }
-
 
 class MyApp extends StatefulWidget {
   @override
@@ -20,10 +18,9 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
   @override
   void didChangeDependencies() {
-    getLocale().then((locale) {
+    SPManager.getLocale().then((locale) {
       setState(() {
         print("Preference Revoked ${locale.languageCode}");
         Get.updateLocale(locale);
@@ -40,34 +37,10 @@ class _MyAppState extends State<MyApp> {
       title: StringConst.appName,
       translations: LanguageTranslations(),
       locale: Get.deviceLocale,
-      fallbackLocale: const Locale('en','US'),
+      fallbackLocale: const Locale('en', 'US'),
       // theme: ThemeData(
       //   appBarTheme: AppBarTheme(backgroundColor: Colors.amber),
       // ),
-      initialBinding: InitialBinding(),
-      theme: ThemeData(
-        primarySwatch: ColorConst.color,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      initialRoute: RoutersConst.initialRoute,
-      getPages: routesPage(),
-    );
-  }
-}
-
-
-class MyApp1 extends StatelessWidget {
-  const MyApp1({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return GetMaterialApp(
-      title: StringConst.appName,
-      debugShowCheckedModeBanner: false,
-      defaultTransition: Transition.rightToLeft,
-      // translations: LanguageTranslations(),
-      // locale: Get.deviceLocale,
-      // fallbackLocale: const Locale('en','US'),
       initialBinding: InitialBinding(),
       theme: ThemeData(
         primarySwatch: ColorConst.color,

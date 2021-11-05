@@ -6,6 +6,6 @@ import 'package:tournament/view/splash/splash_page.dart';
 
 List<GetPage> routesPage() => [
       GetPage(name: RoutersConst.initialRoute, page: () => const SplashPage()),
-      GetPage(name: RoutersConst.loginPage, page: () => LoginPage()),
+      GetPage(name: RoutersConst.loginPage, page: () => const LoginPage()),
       GetPage(name: RoutersConst.home, page: () => HomePage()),
     ];

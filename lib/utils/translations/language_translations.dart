@@ -16,10 +16,10 @@ class LanguageTranslations extends Translations {
         'ja_JP': {
           StringConst.flyingWolf: 'FlyingWolf',
           StringConst.deepakSharma: 'ディーパックシャルマ',
-          StringConst.tournaments_played: 'トーナメント\nプレイ済み',
-          StringConst.tournaments_won: 'トーナメント\n勝ちました',
-          StringConst.winning_percentage: '勝つ\nパーセンテージ',
-          StringConst.recommended_for_you: "あなたにおすすめ",
+          StringConst.tournaments_played: 'トーナメン\nプレイ済み',
+          StringConst.tournaments_won: 'トーナメン\n勝ちました',
+          StringConst.winning_percentage: '勝つ\nパーセンテ',
+          StringConst.recommended_for_you: "あなたにおすす",
           StringConst.eloRating: 'イロレーティング'
         },
         'en_US': {
