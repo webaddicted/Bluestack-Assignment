@@ -125,8 +125,6 @@ class Header extends StatelessWidget {
   final locales = [
     Language(title: 'English', locale: const Locale('en', 'US'), index: 0),
     Language(title: 'Japanese', locale: const Locale('ja', 'JP'), index: 1),
-    Language(title: 'اردو', locale: const Locale('ur', 'PK'), index: 2),
-    Language(title: 'سنڌي', locale: const Locale('sd', 'PK'), index: 3),
   ];
 
   Widget _getPopupMenu() {
