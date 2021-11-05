@@ -7,7 +7,7 @@
 
 ***You can Install and test latest Bluestack-Assignment app from below 👇***
 
-[![E-Commerce-disinfectant](https://img.shields.io/badge/E%20Commerce%20Disinfectant-Apk-brightgreen.svg?style=for-the-badge&logo=android)](https://github.com/webaddicted/E-Commerce-disinfectant/blob/main/apk/app.apk)
+[![Bluestack-Assignment](https://img.shields.io/badge/Bluestack%20Assignment-Apk-brightgreen.svg?style=for-the-badge&logo=android)](https://github.com/webaddicted/Bluestack-Assignment/blob/main/apk/app.apk)
 
 Bluestack-Assignment have two page login and Home Page.
 
