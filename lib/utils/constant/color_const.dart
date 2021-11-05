@@ -5,13 +5,17 @@ import 'package:tournament/utils/common/global_utilities.dart';
 class ColorConst {
   // "63FF90"
   // 3e2f64
-  static var color = Colors.green; //Colors.green;
+  static var color = Colors.blue; //Colors.green;
 
-  static var appColor = const Color(0xff01dc9d); //Colors.green;
+  static var appColor = const Color(0xFFFF325F); //Colors.green;
   // static Color APP_COLOR = colorFromHex('#32CD32');//Colors.green;
   // static Color APP_COLOR = colorFromHex('#00FA9A');//Colors.green;
   static Color lightGreenColor = const Color(0xff01dc9d);
   static Color appYellow = colorFromHex('#f79633');
+  static var yellowSolid = Color(0xFFDD9735);//colorFromHex('#dd9735');
+  static Color blueSolid = colorFromHex('#6c42a4');
+  static Color orangeSolid = colorFromHex('#dc6850');
+
   static const Color greyColor = Colors.grey;
   static const Color redColor = Colors.red;
   static const Color greenColor = Colors.green;

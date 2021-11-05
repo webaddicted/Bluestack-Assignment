@@ -130,7 +130,7 @@ class _LoginPageState extends State<LoginPage> {
                             borderRadius:
                                 BorderRadius.all(Radius.circular(25.0)),
                             gradient: LinearGradient(
-                                colors: [Colors.green, Colors.lightGreen],
+                                colors: [Color(0xFF4DB6FF), Color(0xFF0083FF)],
                                 begin: Alignment.bottomCenter,
                                 end: Alignment.bottomLeft,
                                 tileMode: TileMode.clamp)),

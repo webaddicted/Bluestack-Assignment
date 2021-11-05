@@ -21,11 +21,11 @@ class Header extends StatelessWidget {
         const SizedBox(height: 20),
         Row(mainAxisAlignment: MainAxisAlignment.center, children: [
           getTournamentItem(
-              "34", StringConst.tournaments_played.tr, Colors.pinkAccent, 0),
+              "34", StringConst.tournaments_played.tr, ColorConst.yellowSolid, 0),
           getTournamentItem(
-              "09", StringConst.tournaments_won.tr, Colors.purpleAccent, 1),
+              "09", StringConst.tournaments_won.tr, ColorConst.blueSolid, 1),
           getTournamentItem(
-              "26%", StringConst.winning_percentage.tr, Colors.redAccent, 2),
+              "26%", StringConst.winning_percentage.tr, ColorConst.orangeSolid, 2),
         ]),
         const SizedBox(height: 15),
       ],
@@ -95,8 +95,7 @@ class Header extends StatelessWidget {
     ]);
   }
 
-  Widget getTournamentItem(String score, String description,
-      MaterialAccentColor purpleAccent, int itemPos) {
+  Widget getTournamentItem(String score, String description,purpleAccent, int itemPos) {
     var borderRadius;
     if (itemPos == 0) {
       borderRadius = const BorderRadius.only(
