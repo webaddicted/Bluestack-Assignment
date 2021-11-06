@@ -12,6 +12,9 @@
 Bluestack-Assignment have two page login and Home Page.
 
 
+## GIF
+<img src="https://github.com/webaddicted/Bluestack-Assignment/raw/main/screenshot/funny.gif" width="705">
+
 This repo contain following component :
 
 1) Login Screen
