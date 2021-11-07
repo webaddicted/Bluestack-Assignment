@@ -15,20 +15,17 @@ Bluestack-Assignment have two page login and Home Page.
 ## GIF
 <img src="https://github.com/webaddicted/Bluestack-Assignment/raw/main/screenshot/funny.gif" width="305">
 
-This repo contain following component :
+## Screens
+- [Splash Page](#LoginScreen)
+- [Login Module](#LoginScreen)
+- [Home Page](#HomeScreen)
+- [Multi Language support](#HomePage)
+- [Pagination](#HomeScreen)
 
-1) Login Screen
-2) Home Screen
-3) Multi Language support
-4) Pagination
-
-## Login Module
-
+## LoginScreen
 <img src="https://github.com/webaddicted/Bluestack-Assignment/raw/main/screenshot/login.jpg" height="500">
 
-
-## Home Page
-
+## HomeScreen
 <img src="https://github.com/webaddicted/Bluestack-Assignment/raw/main/screenshot/home.jpg" height="500">
 
 ## LICENSE
