@@ -19,7 +19,7 @@ Bluestack-Assignment have two page login and Home Page.
 - [Splash Page](#LoginScreen)
 - [Login Module](#LoginScreen)
 - [Home Page](#HomeScreen)
-- [Multi Language support](#HomePage)
+- [Multi Language support](#HomeScreen)
 - [Pagination](#HomeScreen)
 
 ## LoginScreen
