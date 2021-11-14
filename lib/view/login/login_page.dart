@@ -112,6 +112,7 @@ class _LoginPageState extends State<LoginPage> {
                   padding: const EdgeInsets.only(),
                   child: InkWell(
                       onTap: () {
+                        Get.offAllNamed(RoutersConst.home);
                         final form = formKey.currentState;
                         if (formKey.currentState!.validate()) {
                           form?.save();

@@ -30,12 +30,14 @@ Text getTxtAppColor(
     double fontSize = 15,
     FontWeight fontWeight = FontWeight.normal,
     int? maxLines,
+    TextOverflow? overflow,
     Color? bgColor,
     TextAlign textAlign = TextAlign.start}) {
   return Text(
     msg,
     maxLines: maxLines,
     textAlign: textAlign,
+    overflow: overflow,
     style: _getFontStyle(
         txtColor: ColorConst.appColor,
         fontSize: fontSize,
@@ -50,11 +52,13 @@ Text getTxtWhiteColor(
     FontWeight fontWeight = FontWeight.normal,
     int? maxLines,
     Color? bgColor,
+    TextOverflow? overflow,
     TextAlign textAlign = TextAlign.start}) {
   return Text(
     msg,
     maxLines: maxLines,
     textAlign: textAlign,
+    overflow: overflow,
     style: _getFontStyle(
         txtColor: ColorConst.whiteColor,
         fontSize: fontSize,
@@ -68,13 +72,14 @@ Text getTxtBlackColor(
     double fontSize = 15,
     FontWeight fontWeight = FontWeight.normal,
     int? maxLines,
+    TextOverflow? overflow,
     TextAlign textAlign = TextAlign.start,
     Color? bgColor}) {
   return Text(
     msg,
     textAlign: textAlign,
     maxLines: maxLines,
-    overflow: TextOverflow.ellipsis,
+    overflow: overflow, //TextOverflow.ellipsis,
     style: _getFontStyle(
         txtColor: ColorConst.blackColor,
         fontSize: fontSize,
@@ -87,6 +92,7 @@ Text getTxtGreyColor(
     {required String msg,
     double fontSize = 15,
     FontWeight fontWeight = FontWeight.normal,
+    TextOverflow? overflow,
     int? maxLines,
     Color? bgColor,
     TextAlign textAlign = TextAlign.start}) {
@@ -94,6 +100,7 @@ Text getTxtGreyColor(
     msg,
     textAlign: textAlign,
     maxLines: maxLines,
+    overflow: overflow,
     style: _getFontStyle(
         txtColor: ColorConst.greyColor,
         fontSize: fontSize,
@@ -108,12 +115,14 @@ Text getTxtColor(
     double fontSize = 15,
     FontWeight fontWeight = FontWeight.normal,
     int? maxLines,
+    TextOverflow? overflow,
     Color? bgColor,
     TextAlign textAlign = TextAlign.start}) {
   return Text(
     msg,
     textAlign: textAlign,
     maxLines: maxLines,
+    overflow: overflow,
     style: _getFontStyle(
         txtColor: txtColor,
         fontSize: fontSize,
@@ -179,7 +188,6 @@ Widget edtPwdField(
   );
 }
 
-
 Widget edtRectField(
     {TextEditingController? control,
     String hint = '',
@@ -223,7 +231,7 @@ AppBar getAppBarWithBackBtn(
     {String title = '',
     Color bgColor = ColorConst.whiteColor,
     double fontSize = 17,
-      double elevation= 2,
+    double elevation = 2,
     String titleTag = '',
     Widget? icon,
     List<Widget>? actions}) {
@@ -386,7 +394,6 @@ Widget getPlaceHolder(int placeHolderPos, double height, double width) {
       );
   }
 }
-
 
 Widget apiHandler<T>(
     {required ApiResponse<T> response, Widget? loading, Widget? error}) {

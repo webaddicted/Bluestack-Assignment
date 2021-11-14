@@ -25,6 +25,8 @@ dependencies:
   flutter_rating_bar: ^4.0.0
   font_awesome_flutter: ^9.2.0
   barcode_scan2: ^4.1.4
+  peanut: ^4.1.1
+
 
 dev_dependencies:
   flutter_test:

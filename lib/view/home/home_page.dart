@@ -12,6 +12,7 @@ import 'package:tournament/data/bean/home_respo.dart';
 import 'package:tournament/utils/apiutils/api_response.dart';
 import 'package:tournament/utils/common/widget_helper.dart';
 import 'package:tournament/utils/constant/color_const.dart';
+import 'package:tournament/utils/constant/routers_const.dart';
 import 'package:tournament/utils/constant/string_const.dart';
 import 'package:tournament/view/home/header.dart';
 
@@ -120,7 +121,9 @@ class HomePage extends GetView<HomeController> {
         return Padding(
           padding: const EdgeInsets.all(4),
           child: InkWell(
-            onTap: () {},
+            onTap: () {
+              Get.toNamed(RoutersConst.detail+"/${list.gameName}", arguments: [list]);
+            },
             child: Card(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
@@ -145,6 +148,7 @@ class HomePage extends GetView<HomeController> {
                         child: getTxtBlackColor(
                             msg: list.name.toString(),
                             fontSize: 17,
+                            overflow: TextOverflow.ellipsis,
                             maxLines: 1,
                             fontWeight: FontWeight.w600,
                             textAlign: TextAlign.center),
