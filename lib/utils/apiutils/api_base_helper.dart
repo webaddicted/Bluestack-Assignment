@@ -11,8 +11,8 @@ class ApiBaseHelper {
 
   ApiBaseHelper() {
     var options = BaseOptions(
-        receiveTimeout: ApiConstant.timeOut,
-        connectTimeout: ApiConstant.timeOut);
+        receiveTimeout: Duration(seconds: ApiConstant.timeOut),
+        connectTimeout: Duration(seconds: ApiConstant.timeOut));
     options.baseUrl = ApiConstant.baseUrl;
     _dio = Dio(options);
     _dio?.interceptors.add(LogInterceptor());
@@ -83,5 +83,3 @@ class ApiResponseCode {
 }
 
 final apiHelper = ApiBaseHelper();
-
-

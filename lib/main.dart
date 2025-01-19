@@ -9,6 +9,7 @@ import 'package:tournament/utils/sp/sp_manager.dart';
 import 'package:tournament/utils/translations/language_translations.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 
